@@ -3,7 +3,7 @@
     <div class="slider__body" :style="{ 'margin-left': '-' + (100*currSlideIndex) + '%' }">
       <div class="slider__item"
            v-for="i in imgs">
-        <img :src="'/src/assets/img/' + i" alt="img">
+        <img :src="'@/src/assets/img/' + i" alt="img">
       </div>
     </div>
   </div>

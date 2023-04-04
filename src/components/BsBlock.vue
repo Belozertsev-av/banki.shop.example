@@ -1,7 +1,7 @@
 <template>
   <div class="block" :class="{ unactive : paintItem.isSold === true}">
     <div class="block__img" @click="isOpenModal = true">
-      <img :src="'/src/assets/img/' + paintItem.img[0]"
+      <img :src="'@/src/assets/img/' + paintItem.img[0]"
            alt="img">
     </div>
     <div class="block__body">
