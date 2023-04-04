@@ -3,7 +3,7 @@
     <div class="slider__body" :style="{ 'margin-left': '-' + (100*currSlideIndex) + '%' }">
       <div class="slider__item"
            v-for="i in imgs">
-        <img :src="getImageUrl(i)" alt="img">
+        <img :src="'/' + i" alt="img">
       </div>
     </div>
   </div>
@@ -14,7 +14,6 @@
 </template>
 
 <script>
-import path from "@/assets/img/";
 
 export default {
   name: "BsSlider",
@@ -35,9 +34,6 @@ export default {
     }
   },
   methods: {
-    getImageUrl(name) {
-      return path + name
-    },
     prevSlide() {
       if (this.currSlideIndex > 0)
         this.currSlideIndex--

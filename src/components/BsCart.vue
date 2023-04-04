@@ -5,7 +5,7 @@
       <div class="cart__body">
         <div class="cart-item"
              v-for="i in cart.cart">
-          <img class="cart-item__img" :src="getImageUrl(i.img[0])" alt="img">
+          <img class="cart-item__img" :src="'/' + i.img[0]" alt="img">
           <h2 class="cart-item__title"> {{ i.title}}</h2>
           <div class="cart-item__block-price">
             <h6 class="cart-item__old-price">{{ (i.oldPrice) ? i.oldPrice + '$' : '' }}</h6>
@@ -27,7 +27,6 @@
 <script>
 import {useCart} from "../stores/store.js";
 import BsPreloader from "./BsPreloader.vue";
-import path from "@/assets/img/";
 
 export default {
   name: "BsCart",
@@ -47,9 +46,6 @@ export default {
     }
   },
   methods: {
-    getImageUrl(name) {
-      return path + name
-    },
     deletePosition(el) {
       this.cart.delFromCart(el)
     }

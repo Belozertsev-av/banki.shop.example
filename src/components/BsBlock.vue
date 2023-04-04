@@ -1,7 +1,7 @@
 <template>
   <div class="block" :class="{ unactive : paintItem.isSold === true}">
     <div class="block__img" @click="isOpenModal = true">
-      <img :src="getImageUrl(paintItem.img[0])"
+      <img :src="'/' + paintItem.img[0]"
            alt="img">
     </div>
     <div class="block__body">
@@ -64,7 +64,7 @@
 import {useCart} from "../stores/store.js";
 import BsPreloader from "./BsPreloader.vue";
 import BsSlider from "./BsSlider.vue";
-import path from "@/assets/img/";
+
 export default {
 
   name: "BsBlock",
@@ -97,9 +97,6 @@ export default {
     },
   },
   methods: {
-    getImageUrl(name) {
-      return path + name
-    },
     contains(arr, elem) {
         for (let i = 0; i < arr.length; i++) {
           if (arr[i].id === elem.id) {
