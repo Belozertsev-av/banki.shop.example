@@ -5,7 +5,7 @@
       <div class="cart__body">
         <div class="cart-item"
              v-for="i in cart.cart">
-          <img class="cart-item__img" :src="'@/assets/img/' + i.img[0]" alt="img">
+          <img class="cart-item__img" :src="getImageUrl(i.img[0])" alt="img">
           <h2 class="cart-item__title"> {{ i.title}}</h2>
           <div class="cart-item__block-price">
             <h6 class="cart-item__old-price">{{ (i.oldPrice) ? i.oldPrice + '$' : '' }}</h6>
@@ -46,6 +46,9 @@ export default {
     }
   },
   methods: {
+    getImageUrl(name) {
+      return new URL(`@/assets/img/${name}`, import.meta.url).href
+    },
     deletePosition(el) {
       this.cart.delFromCart(el)
     }

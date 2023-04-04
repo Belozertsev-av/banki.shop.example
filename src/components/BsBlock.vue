@@ -1,7 +1,7 @@
 <template>
   <div class="block" :class="{ unactive : paintItem.isSold === true}">
     <div class="block__img" @click="isOpenModal = true">
-      <img :src="require('@/assets/img/' + paintItem.img[0])"
+      <img :src="getImageUrl(paintItem.img[0])"
            alt="img">
     </div>
     <div class="block__body">
@@ -96,6 +96,9 @@ export default {
     },
   },
   methods: {
+    getImageUrl(name) {
+      return new URL(`@/assets/img/${name}`, import.meta.url).href
+    },
     contains(arr, elem) {
         for (let i = 0; i < arr.length; i++) {
           if (arr[i].id === elem.id) {
