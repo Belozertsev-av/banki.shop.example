@@ -9,7 +9,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@samrahnama/triple-state-slider": "^1.1.5",
     "node-sass": "^8.0.0",
     "pinia": "^2.0.33",
     "sass": "^1.60.0",
