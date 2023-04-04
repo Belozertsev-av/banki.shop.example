@@ -3,7 +3,7 @@
     <div class="slider__body" :style="{ 'margin-left': '-' + (100*currSlideIndex) + '%' }">
       <div class="slider__item"
            v-for="i in imgs">
-        <img :src="path + i" alt="img">
+        <img :src="require('/src/assets/img/' + i)" alt="img">
       </div>
     </div>
   </div>
@@ -29,7 +29,6 @@ export default {
   },
   data() {
     return{
-      path: '/src/assets/img/',
       currSlideIndex: 0,
     }
   },
