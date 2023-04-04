@@ -12,11 +12,11 @@
           </ul>
         </div>
         <div class="footer__tel">
-          <img src="/src/assets/img/tel.png" alt="phone">
+          <img src="/public/img/tel.png" alt="phone">
           <p>+7 (812) 555-55-55</p>
         </div>
         <div class="footer__address">
-          <img src="/src/assets/img/address.png" alt="phone">
+          <img src="/public/img/address.png" alt="phone">
           <a href="https://yandex.ru/maps/2/saint-petersburg/house/ulitsa_yefimova_3s/Z0kYdQVgSE0HQFtjfXVzdH1mYQ==/?indoorLevel=1&ll=30.320180%2C59.925155&z=16.89">г. Санкт-Петербург, ул. Ефимова, 3</a>
         </div>
       </div>
