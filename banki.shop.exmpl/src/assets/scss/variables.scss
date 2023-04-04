@@ -1,0 +1,47 @@
+$bgc: #F6F3F3;
+$primary: #403432;
+$primary-hover: #776763;
+$primary-disable: #C1B4B1;
+$secondary: #5B3A32;
+$secondary-foot: #ECEAEA;
+$secondary-disable: #E1E1E1;
+$font-light: #F4F6F9;
+$font-dark: #343030;
+
+.container{
+  max-width: 1270px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  flex: 1 1 auto;
+}
+
+.btn{
+  background-color: $primary;
+  color: $font-light;
+  padding: 13px 36px;
+  transition-duration: 0.2s;
+
+  &:hover{
+    background-color: $primary-hover;
+  }
+  &:active{
+    transform: scale(0.97);
+  }
+}
+
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
