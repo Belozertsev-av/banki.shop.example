@@ -64,6 +64,7 @@
 import {useCart} from "../stores/store.js";
 import BsPreloader from "./BsPreloader.vue";
 import BsSlider from "./BsSlider.vue";
+import path from "@/assets/img/";
 export default {
 
   name: "BsBlock",
@@ -97,7 +98,7 @@ export default {
   },
   methods: {
     getImageUrl(name) {
-      return new URL(`@/assets/img/${name}`, import.meta.url).href
+      return path + name
     },
     contains(arr, elem) {
         for (let i = 0; i < arr.length; i++) {

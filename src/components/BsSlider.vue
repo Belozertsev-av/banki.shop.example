@@ -14,6 +14,8 @@
 </template>
 
 <script>
+import path from "@/assets/img/";
+
 export default {
   name: "BsSlider",
   props: {
@@ -34,7 +36,7 @@ export default {
   },
   methods: {
     getImageUrl(name) {
-      return new URL(`@/assets/img/${name}`, import.meta.url).href
+      return path + name
     },
     prevSlide() {
       if (this.currSlideIndex > 0)

@@ -27,6 +27,7 @@
 <script>
 import {useCart} from "../stores/store.js";
 import BsPreloader from "./BsPreloader.vue";
+import path from "@/assets/img/";
 
 export default {
   name: "BsCart",
@@ -47,7 +48,7 @@ export default {
   },
   methods: {
     getImageUrl(name) {
-      return new URL(`@/assets/img/${name}`, import.meta.url).href
+      return path + name
     },
     deletePosition(el) {
       this.cart.delFromCart(el)
