@@ -72,8 +72,8 @@ h1, h2, h3, h4, h5, h6 {
 
 @font-face {
   font-family: "Merriweather";
-  src: url("src/assets/fonts/Merriweather-Regular.woff2"),
-  url("src/assets/fonts/Merriweather-Regular.woff");
+  src: url("public/fonts/Merriweather-Regular.woff2"),
+  url("public/fonts/Merriweather-Regular.woff");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -81,8 +81,8 @@ h1, h2, h3, h4, h5, h6 {
 
 @font-face {
   font-family: "Merriweather";
-  src: url("src/assets/fonts/Merriweather-Light.woff2"),
-  url("src/assets/fonts/Merriweather-Light.woff");
+  src: url("public/fonts/Merriweather-Light.woff2"),
+  url("public/fonts/Merriweather-Light.woff");
   font-style: normal;
   font-weight: 300;
   font-display: swap;
@@ -90,8 +90,8 @@ h1, h2, h3, h4, h5, h6 {
 
 @font-face {
   font-family: "Merriweather";
-  src: url("src/assets/fonts/Merriweather-Bold.woff2"),
-  url("src/assets/fonts/Merriweather-Bold.woff");
+  src: url("public/fonts/Merriweather-Bold.woff2"),
+  url("public/fonts/Merriweather-Bold.woff");
   font-style: normal;
   font-weight: 700;
   font-display: swap;
