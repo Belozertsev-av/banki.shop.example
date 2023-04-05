@@ -137,7 +137,7 @@ export default {
   .header{
     &__burger{
       display: flex;
-      margin: 27px 0;
+      margin: 27px 10px 27px;
     }
     &__menu-body{
       display: none;
